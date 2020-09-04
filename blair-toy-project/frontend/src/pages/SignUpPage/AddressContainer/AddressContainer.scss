@@ -1,0 +1,32 @@
+@import 'src/package';
+
+
+.address-section {
+  @include flex-box-col;
+  margin-bottom: 3rem;
+
+  .address-input-wrap {
+    @include flex-box-col;
+
+    .address-search-info-wrap {
+      @include flex-box-row;
+      justify-content: space-between;
+      align-items: baseline;
+
+      .address-number-label {
+        margin-right: 0.3rem;
+        flex-grow: 2;
+      }
+
+      .address-search-btn-label {
+        flex-grow: 1;
+
+        .address-search-btn {
+          color: $color-gray-200;
+          padding: 0.82rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

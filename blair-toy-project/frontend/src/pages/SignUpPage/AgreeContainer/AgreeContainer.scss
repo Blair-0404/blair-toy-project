@@ -1,0 +1,47 @@
+@import 'src/package';
+
+
+.agree-section {
+  margin-bottom: 3rem;
+  @include flex-box-col;
+
+  //공통
+  .view-content {
+    line-height: 1.7;
+    font-size: $small-font-size;
+    color: $color-gray-400;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .all-agree-text {
+    font-weight: 600;
+  }
+  .necessary-agree-wrap {
+    @include flex-box-col;
+    margin-bottom: 0.5rem;
+
+    .checkbox-agree-wrap {
+      margin-bottom: 0rem;
+      .necessary-agree-checkbox-wrap{
+      margin-bottom: 0.3rem;
+    }
+    }
+    .view-content-wrap {
+      @include flex-box-row;
+      margin-left: 1.7rem;
+
+      .boss-content {
+        margin-right: 0.3rem;
+      }
+
+    }
+  }
+
+  .small-desc {
+    @include flex-box-row;
+    align-items: baseline;
+    li {
+      margin-right: 0.3rem;
+    }
+  }
+}
