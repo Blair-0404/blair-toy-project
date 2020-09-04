@@ -1,0 +1,91 @@
+@import 'src/package';
+
+.sign-up-page {
+  border: 1px solid $color-gray-500;
+  padding: 2.5rem;
+  margin: 100px auto;
+  max-width: $mobile-max-width;
+
+  .sign-up-title {
+    @include flex-box-col;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+
+  }
+
+  .sign-up-form {
+
+    //공통
+    .input-box {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.7rem;
+      border: 1px solid $color-gray-200;
+      background-color: white;
+
+      &::placeholder {
+        color: $color-gray-200;
+      }
+    }
+
+    .necessary-section {
+      .desc {
+        margin-bottom: 1rem;
+      }
+
+      .necessary-input-wrap {
+        @include flex-box-col;
+        .email-input-wrap {
+          @include flex-box-row;
+          justify-content: space-between;
+          align-items: baseline;
+          .select-box {
+          }
+        }
+        .phone-info-wrap {
+          @include flex-box-row;
+          justify-content: space-between;
+          align-items: baseline;
+          .phone-number-label {
+            margin-right: 0.3rem;
+            flex-grow: 2;
+          }
+          .phone-auth-btn-label {
+            flex-grow: 1;
+            .phone-auth-btn {
+            color: $color-gray-200;
+            padding: 0.61rem
+            }
+          }
+        }
+        .small-desc {
+          color: $color-gray-200;
+          font-size: 0.8rem;
+          li {
+            @include flex-box-row;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+          }
+        }
+
+      }
+    }
+
+    .address-section {
+
+    }
+
+    .agree-section {
+
+    }
+
+    .sign-up-btn {
+      width: 100%;
+      background-color: $color-blue;
+      color: $color-white;
+      padding: 15px;
+      border-radius: 3px;
+    }
+  }
+}

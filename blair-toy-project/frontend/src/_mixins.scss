@@ -1,0 +1,18 @@
+@mixin flex-box-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-box-row {
+  display: flex;
+  flex-direction: row;
+}
+
+//문법예시
+//@mixin font-family($font: $font-main) {
+//  @if $font == $font-main {
+//    font-family: $font-main, sans-serif;
+//  } @else {
+//    font-family: $font, $font-main, sans-serif;
+//  }
+//}
