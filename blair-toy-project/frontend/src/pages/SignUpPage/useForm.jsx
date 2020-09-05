@@ -13,7 +13,7 @@ const useForm = () => {
 
     const [errors, setErrors] = useState({});
 
-    const handleChanges = e => {
+    const handleChange = e => {
         const {name, value} = e.target;
         setValues({
             ...values,
@@ -25,7 +25,7 @@ const useForm = () => {
         e.preventDefault()
     };
 
-    return {handleChanges, values, handleSubmit}
+    return {handleChange, values, handleSubmit}
 };
 
 export default useForm;
