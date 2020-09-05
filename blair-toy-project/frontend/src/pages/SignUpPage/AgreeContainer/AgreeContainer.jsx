@@ -9,14 +9,14 @@ function AgreeContainer() {
             <div className="checkbox-agree-wrap">
                 <div className="checkbox-wrap">
                     <input type="checkbox" className="all-agree" id="all-agree"/>
-                    <label for="all-agree" className="all-agree-text">전체 약관에 동의합니다.</label>
+                    <label htmlFor="all-agree" className="all-agree-text">전체 약관에 동의합니다.</label>
                 </div>
             </div>
             <div className="necessary-agree-wrap">
                 <div className="checkbox-agree-wrap">
                     <div className="necessary-agree-checkbox-wrap checkbox-wrap">
                         <input type="checkbox" className="necessary-agree" id="necessary-agree"/>
-                        <label for="necessary-agree">필수항목에 동의합니다.</label>
+                        <label htmlFor="necessary-agree">필수항목에 동의합니다.</label>
                     </div>
                 </div>
                 <ul className="view-content-wrap">
@@ -27,7 +27,7 @@ function AgreeContainer() {
             <div className="checkbox-agree-wrap">
                 <div className="checkbox-wrap">
                     <input type="checkbox" className="ad-agree" id="ad-agree"/>
-                    <label for="ad-agree">광고성 정보 수신 동의 (선택)</label>
+                    <label htmlFor="ad-agree">광고성 정보 수신 동의 (선택)</label>
                 </div>
             </div>
             <ul className="small-desc">

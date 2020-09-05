@@ -1,7 +1,5 @@
 import React from 'react';
 import './AddressContainer.scss';
-import {BsPeopleCircle} from 'react-icons/bs';
-import {VscDebugStackframeDot} from 'react-icons/vsc';
 
 function AddressContainer() {
     return (
